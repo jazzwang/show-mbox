@@ -19,3 +19,5 @@ for message in mbox:
 	for block in soup.select(".sg-paragraph-large"):
 		if block.get('style') == "color: #000;" :
 			print dt + ";" + block.text.rstrip().lstrip().encode('utf-8')
+	for block in soup.select(".job-company-name"):
+		print dt + ";" + block.text.rstrip().lstrip().encode('utf-8')
