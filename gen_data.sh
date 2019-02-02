@@ -1,4 +1,9 @@
 #!/bin/bash
+
+### https://dateutil.readthedocs.io/en/stable/parser.html
+
+sudo pip install mailbox lxml bs4 python-dateutil
+
 echo "Get Job Companies ..."
 python show_mbox_company.py > job_company.txt
 echo "Get Job Locations ..."
