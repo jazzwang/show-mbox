@@ -19,4 +19,4 @@ for message in mbox:
 	for block in soup.select('span.sg-paragraph-large.db'):
 		print dt + ";" + block.text.replace('-','').rstrip().lstrip().encode('utf-8')
 	for block in soup.select(".job-company-location"):
-		print dt + ";" + block.text.rstrip().lstrip().encode('utf-8')
+		print dt + ";" + block.text.replace('-','').rstrip().lstrip().encode('utf-8')
